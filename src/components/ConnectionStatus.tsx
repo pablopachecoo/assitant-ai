@@ -64,7 +64,7 @@ const ConnectionStatus: React.FC<ConnectionStatusProps> = ({ status }) => {
   const { icon, text, bgColor, textColor, animation } = getStatusConfig();
 
   return (
-    <div className={`state ${bgColor} ${textColor} ${animation} mx-auto max-w-xs`}>
+    <div className={`state ${bgColor} ${textColor} ${animation} mx-auto max-w-xs flex flex-col items-center`}>
       {icon}
       <span className="ml-2">{text}</span>
     </div>
